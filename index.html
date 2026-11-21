@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <title>Thế giới di động</title>
   </head>
   <body>
@@ -26,13 +30,39 @@
                 alt=""
             /></a>
           </li>
-          <li>
+
+          <li class="adress">
             <a href="">
               TP Hồ Chí Minh <i class="fa-solid fa-caret-down"></i>
             </a>
+            <div class="adress-from">
+              <h2>Chọn địa chỉ nhận hàng</h2>
+              <form action="">
+                <p>
+                  Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao
+                </p>
+                <select name="tinh" id="tinh">
+                  <option value="">--Chọn Tỉnh/Thành phố--</option>
+                  <option value="hcm">TP. Hồ Chí Minh</option>
+                  <option value="hn">Hà Nội</option>
+                  <option value="dn">Đà Nẵng</option>
+                  <option value="ct">Cần Thơ</option>
+                </select>
+                <select name="quan" id="quan">
+                  <option value="">--Chọn Quận/Huyện--</option>
+                </select>
+                <select name="phuong" id="phuong">
+                  <option value="">--Chọn Phường/Xã--</option>
+                </select>
+                <input type="text" placeholder="Số nhà, tên đường" />
+                <button type="submit">Xác nhận địa chỉ</button>
+              </form>
+            </div>
           </li>
+
           <li>
-            <input type="text" placeholder="Bạn tìm gì..."/> <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Bạn tìm gì..." />
+            <i class="fa-solid fa-magnifying-glass"></i>
           </li>
           <li>
             <a href="">
@@ -44,7 +74,10 @@
           </li>
 
           <li>
-            <a href=""><span class="btn-content"><span class="btn-top"></span></span>Mua thẻ nạp ngay!</a>
+            <a href=""
+              ><span class="btn-content"><span class="btn-top"></span></span>Mua
+              thẻ nạp ngay!</a
+            >
           </li>
           <li><a href="">24h Công nghệ</a></li>
           <li><a href="">24h Hỏi đáp</a></li>
@@ -52,5 +85,267 @@
         </ul>
       </div>
     </nav>
+    <section class="menu-bar">
+      <div class="container">
+        <div class="menu-bar-content">
+          <ul>
+            <li>
+              <a href=""
+                ><i class="fa-solid fa-tablet-screen-button"></i>Điện thoại</a
+              >
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-laptop"></i>Laptop</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-tablet"></i>Taplet</a>
+            </li>
+            <li class="phu-kien">
+              <a href="">
+                <i class="fa-solid fa-headphones"></i>Phụ kiện
+                <i style="margin-left: 4px" class="fa-solid fa-caret-down"></i>
+              </a>
+              <div class="menu-con">
+                <a href="">Sạc dự phòng</a>
+                <a href="">Cáp sạc</a>
+                <a href="">Ốp lưng điện thoại</a>
+                <a href="">Tai nghe</a>
+                <a href="">Loa Bluetooth</a>
+                <a href="">Chuột, bàn phím</a>
+              </div>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-smartwatch"></i> Đồng hồ</a>
+            </li>
+            <li class="pc-may-in">
+              <a href="">
+                <i class="fa-solid fa-desktop"></i> PC, Máy in
+                <i style="margin-left: 4px" class="fa-solid fa-caret-down"></i>
+              </a>
+              <div class="menu-con">
+                <a href="">Máy tính để bàn</a>
+                <a href="">Màn hình máy tính</a>
+                <a href="">Máy in</a>
+                <a href="">Mực in</a>
+                <a href="">Linh kiện máy tính</a>
+                <a href="">Thiết bị mạng</a>
+              </div>
+            </li>
+            <li><a href="">Máy cũ giá rẻ</a></li>
+            <li><a href="">Sim, thẻ cào</a></li>
+            <li><a href="">Điện nước</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider -->
+    <section class="slider">
+      <div class="container">
+        <div class="slider-content">
+          <div class="slider-content-left">
+            <div class="slider-content-left-top">
+              <img src="./images/sectionbottom1.webp" alt="" class="active" />
+              <img src="./images/sectionbottom2.webp" alt="" />
+              <img src="./images/sectionbottom3.webp" alt="" />
+              <img src="./images/sectionbottom4.webp" alt="" />
+              <img src="./images/sectionbottom5.webp" alt="" />
+
+              <button class="slider-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="slider-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div class="slider-content-left-bottom">
+              <ul>
+                <li class="active">Ngày hội giá rẻ</li>
+                <li>OPPO A78 ưu đãi</li>
+                <li>Redmi Note 12 giá sốc</li>
+                <li>Galaxy S22 Ultra</li>
+                <li>Laptop giảm giá</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="slider-content-right">
+            <a href=""><img src="./images/banner-2.jpg" alt="" /></a>
+            <a href=""><img src="./images/banner-3.jpg" alt="" /></a>
+            <a href=""><img src="./images/banner-4.jpg" alt="" /></a>
+            <a href=""><img src="./images/banner-5.jpg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner -->
+    <div class="banner-one">
+      <div class="container">
+        <img src="./images/a.png" alt="" />
+      </div>
+    </div>
+    <!-- slider-product -->
+    <section class="slider-product-one">
+      <div class="container">
+        <div class="slider-product-one-content">
+          <div class="slider-product-one-content-title">
+            <h2>Săn Sale Online Mỗi Ngày</h2>
+          </div>
+          <div class="slider-product-one-content-slider">
+            <button class="product-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="slider-product-one-content-items">
+              <div class="slider-product-one-content-item">
+                <img src="./images/p1.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Trợ giá cho học
+                    sinh, sinh viên
+                  </p>
+                  <p>iPhone 14 Pro Max 128GB</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">32.990.000 <sup>đ</sup></p>
+                  <p class="gia-moi">25.990.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="./images/p2.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Ưu đãi đặc biệt
+                  </p>
+                  <p>Samsung Galaxy A14 5G</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">5.190.000 <sup>đ</sup></p>
+                  <p class="gia-moi">3.990.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="./images/p3.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Ưu đãi đặc biệt
+                  </p>
+                  <p>OPPO Find N2 Flip</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">19.990.000 <sup>đ</sup></p>
+                  <p class="gia-moi">16.990.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="./images/p4.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Ưu đãi đặc biệt
+                  </p>
+                  <p>Xiaomi Redmi Note 12</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">5.790.000 <sup>đ</sup></p>
+                  <p class="gia-moi">4.490.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="./images/p5.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Ưu đãi đặc biệt
+                  </p>
+                  <p>Samsung Galaxy S21 FE</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">12.990.000 <sup>đ</sup></p>
+                  <p class="gia-moi">9.990.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="./images/p1.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Ưu đãi đặc biệt
+                  </p>
+                  <p>iPhone 14 Pro Max 256GB</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">35.990.000 <sup>đ</sup></p>
+                  <p class="gia-moi">28.990.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="./images/p2.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Ưu đãi đặc biệt
+                  </p>
+                  <p>Samsung Galaxy A14 128GB</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">5.490.000 <sup>đ</sup></p>
+                  <p class="gia-moi">4.190.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="./images/p3.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Ưu đãi đặc biệt
+                  </p>
+                  <p>OPPO Find N2 Flip 256GB</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">20.990.000 <sup>đ</sup></p>
+                  <p class="gia-moi">17.490.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="./images/p4.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Ưu đãi đặc biệt
+                  </p>
+                  <p>Xiaomi Redmi Note 12 256GB</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">6.290.000 <sup>đ</sup></p>
+                  <p class="gia-moi">4.990.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+              <div class="slider-product-one-content-item">
+                <img src="./images/p5.webp" alt="" />
+                <div class="slider-product-one-content-items-text">
+                  <p class="uu-dai">
+                    <img src="./images/icon1.webp" alt="" /> Ưu đãi đặc biệt
+                  </p>
+                  <p>Samsung Galaxy S21 FE 256GB</p>
+                  <p class="online">Online giá rẻ</p>
+                  <p class="gia-cu">13.990.000 <sup>đ</sup></p>
+                  <p class="gia-moi">10.490.000 <sup>đ</sup></p>
+                  <p>Quà tặng hấp dẫn</p>
+                  <p class="sao">★★★★★</p>
+                </div>
+              </div>
+            </div>
+            <button class="product-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js.js"></script>
   </body>
 </html>

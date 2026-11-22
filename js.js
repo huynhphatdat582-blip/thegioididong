@@ -77,3 +77,26 @@ nutSanPhamTrai.onclick = function () {
 nutSanPhamPhai.onclick = function () {
   truotSanPham(1);
 };
+//
+
+const watchItems = document.querySelector(".watch-items");
+const watchPrev = document.querySelector(".watch-prev");
+const watchNext = document.querySelector(".watch-next");
+const watchTabs = document.querySelectorAll(".watch-tab");
+
+watchNext.addEventListener("click", function () {
+  watchItems.scrollLeft += watchItems.clientWidth / 4;
+});
+
+watchPrev.addEventListener("click", function () {
+  watchItems.scrollLeft -= watchItems.clientWidth / 4;
+});
+
+watchTabs.forEach(function (tab) {
+  tab.addEventListener("click", function () {
+    watchTabs.forEach(function (item) {
+      item.classList.remove("active");
+    });
+    tab.classList.add("active");
+  });
+});
